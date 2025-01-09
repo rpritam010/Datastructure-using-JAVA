@@ -33,5 +33,22 @@ public class Main {
         employeeList.remove(2);
         employeeList.forEach(System.out::println);
 
+
+        System.out.println("------The below is for the LinkList----------");
+
+        EmployeeLinkList list = new EmployeeLinkList();
+        list.addToFront(new Employee("Tom","Jerry","567"));
+        list.addToFront(new Employee("Pritam", "Raj", "123"));
+        list.addToFront(new Employee("Megha","Kumari", "234"));
+
+        System.out.println("after add "+list.getSize());
+
+        list.printList();
+
+        list.removeFromFront();
+        System.out.println("after remove"+list.getSize());
+        list.printList();
+
+
     }
 }
